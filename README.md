@@ -1,7 +1,7 @@
-# Item API – Spring Boot Application
+# Item API – Spring Boot REST Application
 
-This is a simple Java Spring Boot backend application that provides RESTful APIs
-to manage a collection of items. The application uses an in-memory data store
+This project is a simple Java Spring Boot backend application that implements
+RESTful APIs to manage a collection of items. It uses an in-memory data store
 (ArrayList) and does not require any database.
 
 ---
@@ -9,23 +9,22 @@ to manage a collection of items. The application uses an in-memory data store
 ## Features
 - Add a new item
 - Get an item by ID
-- Input validation
-- In-memory storage
+- Input validation using Jakarta Validation
+- In-memory storage (ArrayList)
 
 ---
 
 ## Technologies Used
-- Java
+- Java 17
 - Spring Boot
-- REST API
+- REST APIs
 - Maven
-- Validation (Jakarta)
 
 ---
 
 ## API Endpoints
 
-### 1. Add Item
+### Add Item
 **POST** `/items`
 
 Request Body:
